@@ -32,11 +32,46 @@ export default async function CompanyPage({ params }: { params: Promise<{ id: st
     notFound()
   }
 
-  const { data: questions } = await supabase
+  const { data: { user } } = await supabase.auth.getUser()
+  let isPremium = false
+
+  if (user) {
+    const { data: profile } = await supabase
+      .from("profiles")
+      .select("mysql_user_id, is_premium")
+      .eq("id", user.id)
+      .single()
+
+    if (profile) {
+      if (profile.is_premium) {
+        isPremium = true
+      } else if (profile.mysql_user_id) {
+        const { data: subscription } = await supabase
+          .from("premium_subscriptions")
+          .select("end_date")
+          .eq("user_id", profile.mysql_user_id)
+          .gt("end_date", new Date().toISOString())
+          .limit(1)
+          .maybeSingle()
+
+        if (subscription) {
+          isPremium = true
+        }
+      }
+    }
+  }
+
+  let questionsQuery = supabase
     .from("Questions")
     .select("id, title, difficulty, question_type, premium_required")
     .eq("company_id", id)
     .order("id", { ascending: true })
+
+  if (!isPremium) {
+    questionsQuery = questionsQuery.limit(1)
+  }
+
+  const { data: questions } = await questionsQuery
 
   const formattedDate = new Date(company.date).toLocaleDateString('en-US', {
     year: 'numeric',
