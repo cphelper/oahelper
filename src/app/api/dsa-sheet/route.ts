@@ -25,32 +25,50 @@ export async function GET(request: NextRequest) {
 
   try {
     if (action === 'get_dsa_sheet_questions') {
-      // Fetch DSA sheet questions with related data
+      // Fetch DSA sheet questions from QuestionClassifications where dsasheet = true
       const { data, error } = await supabaseAdmin
-        .from('dsasheetcurated')
+        .from('QuestionClassifications')
         .select(`
+          question_id,
           lc_level,
           primary_topic,
           dsasheet_section,
-          created_at,
-          questions (
-            id,
-            title,
-            problem_statement,
-            lc_tags,
-            company_id,
-            companies (name)
-          )
+          topics,
+          created_at
         `)
+        .eq('dsasheet', true)
         .order('primary_topic', { ascending: true })
         .order('lc_level', { ascending: true })
-        .order('id', { ascending: true })
 
       if (error) throw error
 
+      // Get question details for each classification
+      const questionIds = (data || []).map((d) => d.question_id)
+      
+      const { data: questionsData } = await supabaseAdmin
+        .from('Questions')
+        .select('id, title, problem_statement, lc_tags, company_id')
+        .in('id', questionIds)
+
+      // Get company names
+      const companyIds = [...new Set((questionsData || []).map((q) => q.company_id).filter(Boolean))]
+      const { data: companiesData } = await supabaseAdmin
+        .from('Companies')
+        .select('id, name')
+        .in('id', companyIds)
+
+      const companyMap: Record<number, string> = {}
+      companiesData?.forEach((c) => {
+        companyMap[c.id] = c.name
+      })
+
+      const questionMap: Record<number, typeof questionsData[0]> = {}
+      questionsData?.forEach((q) => {
+        questionMap[q.id] = q
+      })
+
       const questions = (data || []).map((row) => {
-        const q = (row.questions as unknown as Record<string, unknown>) || {}
-        const c = ((q.companies as unknown as Record<string, unknown>) || {})
+        const q = questionMap[row.question_id] || {}
 
         let lcTags = q.lc_tags || []
         if (typeof lcTags === 'string') {
@@ -61,18 +79,27 @@ export async function GET(request: NextRequest) {
           }
         }
 
+        let topics = row.topics || []
+        if (typeof topics === 'string') {
+          try {
+            topics = JSON.parse(topics)
+          } catch {
+            topics = []
+          }
+        }
+
         return {
           id: q.id || null,
           title: q.title || null,
           problem_statement: q.problem_statement || null,
           lc_tags: lcTags,
           company_id: q.company_id || null,
-          company_name: c.name || null,
+          company_name: q.company_id ? companyMap[q.company_id] || null : null,
           lc_level: row.lc_level,
           primary_topic: row.primary_topic,
           dsasheet_section: row.dsasheet_section,
           created_at: row.created_at,
-          topics: row.primary_topic ? [row.primary_topic] : [],
+          topics: Array.isArray(topics) ? topics : row.primary_topic ? [row.primary_topic] : [],
         }
       })
 
@@ -106,8 +133,8 @@ export async function GET(request: NextRequest) {
           problem_statement,
           lc_tags,
           company_id,
-          companies (name),
-          questionclassifications (
+          Companies (name),
+          QuestionClassifications (
             lc_level,
             primary_topic,
             dsasheet_section,
@@ -120,8 +147,8 @@ export async function GET(request: NextRequest) {
       if (error) throw error
 
       const questions = (data || []).map((row) => {
-        const c = (row.companies as unknown as Record<string, unknown>) || {}
-        const qcArray = row.questionclassifications || []
+        const c = (row.Companies as unknown as Record<string, unknown>) || {}
+        const qcArray = row.QuestionClassifications || []
         const qcRaw = Array.isArray(qcArray) ? qcArray[0] || {} : qcArray
         const qc = qcRaw as unknown as Record<string, unknown>
 
