@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page -->
+    <url>
+        <loc>https://oahelper.in/</loc>
+        <lastmod>2024-12-29T20:30:00Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Authentication Pages -->
+    <url>
+        <loc>https://oahelper.in/login</loc>
+        <lastmod>2024-12-29T20:30:00Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://oahelper.in/signup</loc>
+        <lastmod>2024-12-29T20:30:00Z</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Premium Page -->
+    <url>
+        <loc>https://oahelper.in/premium</loc>
+        <lastmod>2024-12-29T20:30:00Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Dynamic content note -->
+    <!-- Company-specific pages and questions are generated dynamically -->
+    <!-- Visit https://oahelper.in/sitemap.php for complete dynamic sitemap -->
+</urlset>

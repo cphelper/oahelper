@@ -1,0 +1,64 @@
+[2025-01-03 21:45:22] Attempting database connection with following details:
+Data: {"server":"localhost","database":"oahelper_db","port":8889}
+--------------------------------------------------
+[2025-01-03 21:45:22] Database connection successful
+--------------------------------------------------
+[2025-01-03 21:45:22] Received request
+Data: {"action":"initiate","input":{"name":"cphelper12","email":"cphelper12@gmail.com","password":"Kam25hai","action":"initiate"}}
+--------------------------------------------------
+[2025-01-03 21:45:22] Processing initiate action
+Data: {"name":"cphelper12","email":"cphelper12@gmail.com","passwordLength":8}
+--------------------------------------------------
+[2025-01-03 21:45:22] Attempting to store verification code
+Data: {"email":"cphelper12@gmail.com","code":"273721","expiry":"2025-01-03 22:00:22"}
+--------------------------------------------------
+[2025-01-03 21:46:58] Attempting database connection with following details:
+Data: {"server":"localhost","database":"oahelper_db","port":8889}
+--------------------------------------------------
+[2025-01-03 21:46:58] Database connection successful
+--------------------------------------------------
+[2025-01-03 21:46:58] Received request
+Data: {"action":"initiate","input":{"name":"cphelper12","email":"cphelper12@gmail.com","password":"Kam25hai","action":"initiate"}}
+--------------------------------------------------
+[2025-01-03 21:46:58] Processing initiate action
+Data: {"name":"cphelper12","email":"cphelper12@gmail.com","passwordLength":8}
+--------------------------------------------------
+[2025-01-03 21:46:58] Attempting to store verification code
+Data: {"email":"cphelper12@gmail.com","code":"104512","expiry":"2025-01-03 22:01:58"}
+--------------------------------------------------
+[2025-01-03 21:53:15] Initiating signup
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------
+[2025-01-03 21:53:18] Verification code sent successfully
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------
+[2025-01-03 21:55:28] Initiating signup
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------
+[2025-01-03 21:55:31] Verification code sent successfully
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------
+[2025-01-03 21:55:43] Initiating signup
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------
+[2025-01-03 21:55:46] Verification code sent successfully
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------
+[2025-01-03 21:58:03] Initiating signup
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------
+[2025-01-03 21:58:05] Verification code sent successfully
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------
+[2025-01-03 22:01:23] Initiating signup
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------
+[2025-01-03 22:01:26] Verification code sent successfully
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------
+[2025-01-03 22:01:31] Initiating signup
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------
+[2025-01-03 22:01:34] Verification code sent successfully
+Data: {"email":"cphelper12@gmail.com"}
+--------------------------------------------------

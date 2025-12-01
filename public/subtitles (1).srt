@@ -1,0 +1,864 @@
+1
+00:01:20,372 --> 00:01:21,457
+Bullshit.
+
+2
+00:01:21,540 --> 00:01:23,667
+It is this friggin' wide.
+
+3
+00:01:23,750 --> 00:01:25,169
+And it's periodic.
+
+4
+00:01:25,252 --> 00:01:27,546
+Bull. Shit.
+
+5
+00:01:27,629 --> 00:01:28,631
+Show me.
+
+6
+00:01:35,429 --> 00:01:37,014
+Something terrestrial, gotta be.
+
+7
+00:01:37,890 --> 00:01:39,266
+Bouncing off the moon.
+
+8
+00:01:39,349 --> 00:01:41,685
+Gee. I never thought to check that.
+
+9
+00:01:42,394 --> 00:01:44,021
+Look at that slope, man.
+
+10
+00:01:44,104 --> 00:01:45,940
+You could ski down that thing.
+
+11
+00:01:46,023 --> 00:01:47,316
+It is drifting.
+
+12
+00:01:47,399 --> 00:01:50,152
+Look here. Zoom in. Zoom in.
+
+13
+00:01:50,235 --> 00:01:51,570
+See that variation?
+
+14
+00:01:52,070 --> 00:01:55,407
+And look. This gap here?
+This is where it stops, then starts over.
+
+15
+00:01:55,490 --> 00:01:58,035
+-It repeats?
+-Every 78 seconds.
+
+16
+00:01:58,118 --> 00:01:59,494
+The whole entire thing.
+
+17
+00:02:00,495 --> 00:02:02,831
+Three hours straight, and no end in sight.
+
+18
+00:02:07,169 --> 00:02:08,169
+It can't be.
+
+19
+00:02:20,474 --> 00:02:22,726
+It's gotta be something
+bouncing off the... off the...
+
+20
+00:02:22,809 --> 00:02:24,895
+It's not bouncing off the moon, Dave.
+
+21
+00:02:24,978 --> 00:02:28,065
+Well, maybe it's those Chatty Cathys
+at the Forest Service.
+
+22
+00:02:28,857 --> 00:02:31,360
+I hate those guys. Always on their radios,
+talking about trees.
+
+23
+00:02:31,443 --> 00:02:33,446
+Dave, it's not Smokey Bear
+we're picking up.
+
+24
+00:02:33,529 --> 00:02:34,613
+Look at that signal.
+
+25
+00:02:35,113 --> 00:02:36,198
+It's drifting.
+
+26
+00:02:37,407 --> 00:02:38,492
+What is it, then?
+
+27
+00:02:45,040 --> 00:02:48,210
+Looks like simple pulse-width modulation.
+Old-school, like Morse code.
+
+28
+00:02:49,253 --> 00:02:53,090
+Maybe somehow,
+it's the time signal out of Fort Collins.
+
+29
+00:02:53,173 --> 00:02:55,926
+-They use pulse-width modulation.
+-It's not the atomic clock.
+
+30
+00:02:56,009 --> 00:02:58,429
+The atomic clock changes every minute
+because it's a clock.
+
+31
+00:02:58,512 --> 00:03:01,348
+This is the same exact data
+repeated every 78 seconds.
+
+32
+00:03:01,431 --> 00:03:06,645
+Plus, this is coming
+from 600 light-years away.
+
+33
+00:03:08,856 --> 00:03:12,150
+This Morse code of yours
+seems to be split four ways.
+
+34
+00:03:15,362 --> 00:03:17,323
+The pulses are of equal duration,
+
+35
+00:03:17,406 --> 00:03:20,159
+but they're positioned
+across four different frequencies.
+
+36
+00:03:20,242 --> 00:03:23,579
+-Looks like a player piano.
+-So not binary but base four.
+
+37
+00:03:24,079 --> 00:03:24,997
+Quaternary.
+
+38
+00:03:26,832 --> 00:03:28,333
+This won't be easy to crack.
+
+39
+00:03:36,091 --> 00:03:37,718
+No, no. If you look at this. Look at...
+
+40
+00:03:39,219 --> 00:03:41,347
+What do you think it says?
+
+41
+00:03:41,430 --> 00:03:45,017
+Maybe just,
+"Hello. Hey, hey. We're out here."
+
+42
+00:03:45,517 --> 00:03:48,687
+What did we put on Voyagers 1 and 2?
+Chuck Berry?
+
+43
+00:03:49,229 --> 00:03:51,899
+Maybe this is just
+their version of "Johnny B. Goode."
+
+44
+00:03:53,775 --> 00:03:56,069
+Imagine the power it took to send it.
+
+45
+00:03:56,904 --> 00:03:58,489
+Megawatts?
+
+46
+00:03:58,572 --> 00:03:59,823
+Gigawatts?
+
+47
+00:04:00,699 --> 00:04:02,743
+And that's if it's pointed only at us.
+
+48
+00:04:02,826 --> 00:04:04,370
+Antenna the size of Africa.
+
+49
+00:04:04,453 --> 00:04:05,621
+-Mm-hmm.
+-Bigger.
+
+50
+00:04:07,789 --> 00:04:10,167
+You go to all that trouble
+to send a message,
+
+51
+00:04:10,959 --> 00:04:12,878
+it's gotta be more than just "hello."
+
+52
+00:04:14,505 --> 00:04:16,839
+And why make it hard to understand?
+
+53
+00:04:17,423 --> 00:04:18,466
+Quaternary?
+
+54
+00:04:19,091 --> 00:04:21,553
+That's like encryption.
+Why would you bother to...
+
+55
+00:04:30,729 --> 00:04:32,105
+It's not quaternary.
+
+56
+00:04:36,443 --> 00:04:37,987
+I think I know what it is.
+
+57
+00:05:21,446 --> 00:05:23,866
+<i>The twin moons hung low and full.</i>
+
+58
+00:05:23,949 --> 00:05:26,702
+Two wine-green eyes
+peering over the horizon
+
+59
+00:05:26,785 --> 00:05:29,204
+as if to steal a glimpse
+into Lucasia's soul.
+
+60
+00:05:29,955 --> 00:05:32,041
+She paced the blood-soaked decks
+of the <i>Mercator,</i>
+
+61
+00:05:32,124 --> 00:05:36,003
+looking for something, anything,
+that might take her mind off Raban.
+
+62
+00:05:36,962 --> 00:05:40,841
+Ascending the forecastle, her gaze
+lingered over a bare-chested young sailor.
+
+63
+00:05:41,466 --> 00:05:43,219
+On hands and knees he scrubbed,
+
+64
+00:05:43,302 --> 00:05:47,723
+his sinewy forearms stretched taut as he
+washed away all trace of the day's fight.
+
+65
+00:05:48,432 --> 00:05:50,059
+With a languid nod...
+
+66
+00:05:51,894 --> 00:05:54,479
+...Lucasia bade him follow to her cabin.
+
+67
+00:05:54,980 --> 00:05:58,275
+Little did this callow deckhand know
+that serving at his captain's pleasure
+
+68
+00:05:58,358 --> 00:06:00,111
+might take on such sweet meaning.
+
+69
+00:06:01,361 --> 00:06:05,366
+Or, regrettably,
+that it would last but a single night.
+
+70
+00:06:08,202 --> 00:06:12,706
+Later, at four bells,
+Lucasia stood by the mizzenmast.
+
+71
+00:06:12,789 --> 00:06:15,959
+Once again, she was alone.
+
+72
+00:06:17,085 --> 00:06:18,712
+She pulled her topcoat tighter,
+
+73
+00:06:18,795 --> 00:06:21,841
+fingering its coarse wool
+as her thoughts flashed back to Raban.
+
+74
+00:06:21,924 --> 00:06:25,177
+It had been he who first wrapped
+the coat around her,
+
+75
+00:06:25,260 --> 00:06:27,054
+whispering in her ear,
+
+76
+00:06:27,137 --> 00:06:31,517
+"May this keep you warm
+in my absence, <i>ma chérie</i>."
+
+77
+00:06:33,101 --> 00:06:37,064
+With that, Raban, proud, haughty Raban,
+
+78
+00:06:37,981 --> 00:06:40,192
+mounted the plank and leaped from sight.
+
+79
+00:06:40,776 --> 00:06:43,278
+The am a ran thine
+slips and closed over him,
+
+80
+00:06:44,571 --> 00:06:45,906
+leaving nary a ripple.
+
+81
+00:06:46,573 --> 00:06:47,741
+Aw...
+
+82
+00:06:58,001 --> 00:07:02,131
+Attention, lovers of
+speculative historical romance literature,
+
+83
+00:07:02,214 --> 00:07:05,843
+best-selling author Carol Sturka
+will now sign her new novel,
+
+84
+00:07:05,926 --> 00:07:07,428
+<i>"Bloodsong of Wycaro,"</i>
+
+85
+00:07:07,511 --> 00:07:09,680
+the fourth book in her
+"<i>Winds of Wycaro"</i> trilogy.
+
+86
+00:07:09,763 --> 00:07:12,641
+"Why-car-oh," please!
+It's "Winds of Why-car-oh!"
+
+87
+00:07:13,809 --> 00:07:15,978
+And <i>Bloodsong</i> is the best yet.
+
+88
+00:07:16,061 --> 00:07:17,730
+God, are you in for a treat.
+
+89
+00:07:19,273 --> 00:07:20,691
+Let's go sign books!
+
+90
+00:07:23,652 --> 00:07:25,821
+{\an8}Raban is alive, right?
+
+91
+00:07:25,904 --> 00:07:27,573
+{\an8}Maureen. You could read it.
+
+92
+00:07:27,656 --> 00:07:29,200
+{\an8}Well, I will. Tonight.
+
+93
+00:07:29,283 --> 00:07:31,327
+{\an8}I've already unplugged the phone.
+
+94
+00:07:31,410 --> 00:07:33,037
+{\an8}Just, uh...
+
+95
+00:07:33,120 --> 00:07:35,539
+{\an8}-Raban's not on the cover.
+-No, he's not.
+
+96
+00:07:35,622 --> 00:07:39,042
+{\an8}And he... he's never not been
+on the cover, Carol.
+
+97
+00:07:39,585 --> 00:07:41,295
+{\an8}If Raban doesn't come back...
+
+98
+00:07:42,171 --> 00:07:43,422
+{\an8}...I'm done.
+
+99
+00:07:44,173 --> 00:07:45,174
+Come here.
+
+100
+00:07:46,175 --> 00:07:48,051
+Page 218.
+
+101
+00:07:51,263 --> 00:07:53,682
+-Okay. Thank you.
+-Okay. Bye.
+
+102
+00:07:53,765 --> 00:07:54,850
+Thanks, Maureen.
+
+103
+00:07:54,933 --> 00:07:57,603
+-Okay, this is Olga.
+-Hi. Hi, Olga.
+
+104
+00:08:01,356 --> 00:08:03,066
+Hi, Yvette!
+
+105
+00:08:04,026 --> 00:08:05,319
+Hi!
+
+106
+00:08:05,944 --> 00:08:06,987
+Love it.
+
+107
+00:08:08,155 --> 00:08:11,075
+-Happy reading.
+-This is Nicky, with a pillow.
+
+108
+00:08:11,158 --> 00:08:13,202
+{\an8}-Nicky with a... Oh, my gosh!
+-I made it myself.
+
+109
+00:08:13,285 --> 00:08:15,037
+{\an8}-Look at that. You made this?
+-Yes.
+
+110
+00:08:15,120 --> 00:08:16,122
+This is Christine.
+
+111
+00:08:16,205 --> 00:08:18,290
+This is Paulina and support person.
+
+112
+00:08:18,373 --> 00:08:19,458
+-This is Carlotta.
+-Hi.
+
+113
+00:08:19,541 --> 00:08:21,168
+Say, "Raban".
+
+114
+00:08:21,251 --> 00:08:22,920
+Raban.
+
+115
+00:08:23,003 --> 00:08:25,339
+When Raban and Eldgammel
+fell in the cargo hold,
+
+116
+00:08:25,422 --> 00:08:27,299
+do you remember what it was loaded with?
+
+117
+00:08:27,382 --> 00:08:28,592
+Mandovian spice fruit.
+
+118
+00:08:28,675 --> 00:08:30,761
+Which Lucasia is...
+
+119
+00:08:32,095 --> 00:08:33,721
+Deathly allergic to!
+
+120
+00:08:33,804 --> 00:08:36,265
+{\an8}-Oh, you guys run a fan club?
+-Of course!
+
+121
+00:08:38,977 --> 00:08:40,396
+-Thank you so much!
+-Thank you.
+
+122
+00:08:40,479 --> 00:08:41,480
+-Hi, Tanya.
+-Hi!
+
+123
+00:08:41,563 --> 00:08:42,690
+-Are you excited?
+-Yes.
+
+124
+00:08:42,773 --> 00:08:43,983
+-Hi, Yvonne.
+-Hi.
+
+125
+00:08:44,066 --> 00:08:45,901
+I got two books, one for the tub.
+
+126
+00:08:45,984 --> 00:08:48,946
+This is a authentic cutlass
+just like Raban's.
+
+127
+00:08:49,029 --> 00:08:50,698
+-Okay.
+-Careful, it's really sharp.
+
+128
+00:08:50,781 --> 00:08:52,283
+Okay, so three things.
+
+129
+00:08:52,366 --> 00:08:55,578
+When finally are they
+gonna make a "<i>Wycaro"</i> movie?
+
+130
+00:08:55,661 --> 00:08:58,581
+And please tell me it'll be in actual
+theaters, not on the Lifetime Network.
+
+131
+00:08:58,664 --> 00:09:00,916
+You gotta get ILM to do the slips and,
+
+132
+00:09:00,999 --> 00:09:03,461
+otherwise it's just gonna look like <i>merde,</i>
+pardon my French.
+
+133
+00:09:03,544 --> 00:09:07,131
+A small but very crucial point,
+
+134
+00:09:07,214 --> 00:09:11,969
+as a two-masted schooner, the <i>Mercator</i>
+would not possess a mizzenmast. So...
+
+135
+00:09:12,052 --> 00:09:14,805
+Craig, I'm gonna need you
+to put this back in the bag
+
+136
+00:09:14,888 --> 00:09:16,473
+before the store manager sees it.
+
+137
+00:09:17,015 --> 00:09:18,350
+-Oh.
+-Right.
+
+138
+00:09:18,433 --> 00:09:19,852
+-Your humble servant.
+-Thank you.
+
+139
+00:09:21,019 --> 00:09:23,564
+Oh, that's the one.
+
+140
+00:09:23,647 --> 00:09:25,023
+Thank you so much.
+
+141
+00:09:25,691 --> 00:09:27,610
+-We'll see you at the next one.
+-Happy reading.
+
+142
+00:09:27,693 --> 00:09:29,570
+All right. All right.
+
+143
+00:09:33,699 --> 00:09:37,161
+Hi, ladies. I have us
+going to the Hyatt Regency Dallas.
+
+144
+00:09:37,244 --> 00:09:39,580
+Hi. Yeah. Thanks, uh, perfect.
+
+145
+00:09:40,163 --> 00:09:43,834
+That was quite a send-off.
+I'm sorry, should I know who you are?
+
+146
+00:09:45,002 --> 00:09:47,171
+Uh, depends.
+You a big fan of mindless crap?
+
+147
+00:10:20,996 --> 00:10:22,248
+Morning, Doc.
+
+148
+00:10:22,331 --> 00:10:24,458
+Well, it certainly is.
+
+149
+00:10:25,584 --> 00:10:27,127
+-Hey, Mel.
+-Hey.
+
+150
+00:10:27,920 --> 00:10:29,254
+Ooh, where'd those come from?
+
+151
+00:10:29,838 --> 00:10:30,839
+Yours truly.
+
+152
+00:10:31,507 --> 00:10:33,592
+Help yourself.
+I think they're mostly glazed,
+
+153
+00:10:33,675 --> 00:10:36,679
+but one box ought to be sprinkled,
+powdered and all that.
+
+154
+00:10:36,762 --> 00:10:38,472
+What did we do to deserve this?
+
+155
+00:10:38,555 --> 00:10:41,934
+Ah, my 14-year-old's selling 'em
+for marching band.
+
+156
+00:10:42,643 --> 00:10:44,520
+{\an8}Well, aren't you a good dad.
+
+157
+00:10:44,603 --> 00:10:47,231
+{\an8}-What does she play?
+-Trombone.
+
+158
+00:10:48,065 --> 00:10:50,484
+{\an8}-Doctor D!
+-Good evening.
+
+159
+00:10:50,567 --> 00:10:52,278
+{\an8}Morning. Whatever.
+
+160
+00:10:52,361 --> 00:10:54,572
+{\an8}-Look what Mel brought.
+-Ooh, for us?
+
+161
+00:10:54,655 --> 00:10:55,823
+{\an8}Yeah, please.
+
+162
+00:10:55,906 --> 00:10:57,616
+They got you two working late.
+
+163
+00:10:57,699 --> 00:11:00,118
+Yeah. I gotta gas a bunch of rats.
+
+164
+00:11:01,286 --> 00:11:02,829
+So, how goes the big project?
+
+165
+00:11:03,497 --> 00:11:04,540
+What have you heard?
+
+166
+00:11:05,249 --> 00:11:07,125
+I don't know. Things.
+
+167
+00:11:07,668 --> 00:11:09,086
+Well...
+
+168
+00:11:09,169 --> 00:11:11,338
+Our team's fairly certain
+we've got a sequence
+
+169
+00:11:11,421 --> 00:11:12,923
+that encodes for a lysogenic virus.
+
+170
+00:11:13,006 --> 00:11:14,842
+But after eight whole months
+of animal testing...
+
+171
+00:11:14,925 --> 00:11:16,761
+Macaques, rabbits, mice...
+
+172
+00:11:16,844 --> 00:11:19,471
+-Guinea pigs.
+-Guinea pigs. Now rats.
+
+173
+00:11:19,972 --> 00:11:22,057
+No clinical signs whatsoever.
+
+174
+00:11:24,560 --> 00:11:25,769
+Put another way...
+
+175
+00:11:26,603 --> 00:11:27,604
+we got bubkes.
+
+176
+00:11:28,438 --> 00:11:29,523
+We got bubkes.
+
+177
+00:11:44,162 --> 00:11:46,748
+Okay, how do you wanna do this?
+
+178
+00:11:47,291 --> 00:11:50,586
+Uh, I can put 'em to sleep
+if you wanna do the cardiac sticks.
+
+179
+00:11:51,461 --> 00:11:53,589
+I hate the cardiac sticks.
+
+180
+00:11:53,672 --> 00:11:55,924
+Well, you're more than welcome
+to gas them.
+
+181
+00:11:56,550 --> 00:11:57,927
+I hate gassing them.
+
+182
+00:11:58,010 --> 00:11:59,804
+Might be in the wrong career.
+
+183
+00:11:59,887 --> 00:12:02,389
+All right, cardiac sticks it is.
+
+184
+00:12:02,472 --> 00:12:04,725
+Let's get it over with.
+
+185
+00:12:06,810 --> 00:12:07,811
+Uh-oh.
+
+186
+00:12:09,605 --> 00:12:10,606
+Check it out.
+
+187
+00:12:11,273 --> 00:12:12,399
+Oh, damn.
+
+188
+00:12:13,525 --> 00:12:15,235
+What do you figure happened there?
+
+189
+00:12:21,325 --> 00:12:22,367
+I don't know.
+
+190
+00:12:45,140 --> 00:12:46,600
+He's looking pretty dead to me.
+
+191
+00:12:49,102 --> 00:12:50,020
+You got a heartbeat?
+
+192
+00:12:50,103 --> 00:12:52,022
+I can't feel jack shit in these gloves.
+
+193
+00:13:00,197 --> 00:13:01,490
+Huh.
+
+194
+00:13:01,573 --> 00:13:02,783
+Huh, what?
+
+195
+00:13:04,159 --> 00:13:05,494
+He's absolutely got a heartbeat.
+
+196
+00:13:05,577 --> 00:13:07,621
+A strong one. Just bam, bam, bam.
+
+197
+00:13:07,704 --> 00:13:09,373
+It's weird.

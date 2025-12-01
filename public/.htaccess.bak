@@ -1,0 +1,112 @@
+# Security and routing configuration for OA Helper
+
+# Note: RewriteEngine disabled for MAMP compatibility
+# RewriteEngine On
+
+# Security headers
+<IfModule mod_headers.c>
+    # CORS headers (restrict in production)
+    Header always set Access-Control-Allow-Origin "*"
+    Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS, PUT, DELETE"
+    Header always set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+    
+    # Security headers
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# Block access to sensitive files and directories
+<FilesMatch "\.(env|log|ini|conf|bak|sql|git)$">
+    Order Deny,Allow
+    Deny from All
+</FilesMatch>
+
+# Block access to backend directory from web (mod_rewrite disabled for MAMP)
+# <IfModule mod_rewrite.c>
+#     RewriteCond %{REQUEST_URI} ^.*/backend/.*$
+#     RewriteRule .* - [F,L]
+# </IfModule>
+
+# Block direct access to old PHP files
+<FilesMatch "^(login|signup|question|company|search|upload_question|admin|profile|verify-code|check-email|forgot-password|resend-code|report-issue)\.php$">
+    Order Deny,Allow
+    Deny from All
+</FilesMatch>
+
+# Set proper MIME types
+<IfModule mod_mime.c>
+    AddType application/json .json
+    AddType text/javascript .js
+    AddType text/css .css
+    AddType image/svg+xml .svg
+</IfModule>
+
+# Compress files for better performance
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# Cache static resources
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
+
+# API routing disabled for MAMP (mod_rewrite not available)
+# Use direct API calls: /api.php?endpoint=companies etc.
+
+# Rewrite rules commented out for MAMP compatibility
+# RewriteRule ^login/?$ /api.php?endpoint=auth&action=login [L,QSA]
+# RewriteRule ^signup/?$ /api.php?endpoint=auth&action=signup [L,QSA]
+# RewriteRule ^question/?$ /api.php?endpoint=questions [L,QSA]
+# RewriteRule ^company/?$ /api.php?endpoint=companies [L,QSA]
+# RewriteRule ^search/?$ /api.php?endpoint=search [L,QSA]
+# RewriteRule ^upload_question/?$ /api.php?endpoint=upload [L,QSA]
+# RewriteRule ^admin(.*)$ /api.php?endpoint=admin [L,QSA]
+# RewriteRule ^profile/?$ /api.php?endpoint=profile [L,QSA]
+
+# Static files and React routing handled by React app
+# RewriteCond %{REQUEST_FILENAME} -f [OR]
+# RewriteCond %{REQUEST_FILENAME} -d
+# RewriteRule ^ - [L]
+
+# React Router fallback
+# RewriteCond %{REQUEST_URI} !\.php$
+# RewriteCond %{REQUEST_URI} !^/api
+# RewriteCond %{REQUEST_URI} !^/static/
+# RewriteCond %{REQUEST_URI} !^/(favicon\.ico|logo.*\.png|manifest\.json|robots\.txt|sitemap\.xml)$
+# RewriteRule ^(.*)$ /index.html [L,QSA]
+
+# Attack pattern blocking (commented out for MAMP)
+# RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+# RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+# RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2}) [OR]
+# RewriteCond %{QUERY_STRING} (NULL|OUTFILE|LOAD_FILE) [OR]
+# RewriteCond %{QUERY_STRING} (\./|\../|\.../) [OR]
+# RewriteCond %{QUERY_STRING} ^.*(union|select|insert|delete|update|drop|create|alter|exec).* [NC]
+# RewriteRule .* - [F,L]
+
+# Prevent directory listing
+Options -Indexes
+
+# Hide server information
+ServerTokens Prod
+ServerSignature Off

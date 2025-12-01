@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="OAHelper: Your ultimate resource for Online Assessment (OA) questions from top companies. Practice real interview questions with solutions to ace your coding interviews."
+    />
+    <meta
+      name="keywords"
+      content="Online Assessment, OA, Coding Interview, Interview Questions, Tech Interview, Programming Challenges, Data Structures, Algorithms, Interview Prep, Company Questions, Solved Problems, Software Engineer Interview"
+    />
+    <meta name="author" content="OAHelper Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="OAHelper - Ace Your Online Assessments" />
+    <meta property="og:description" content="OAHelper: Your ultimate resource for Online Assessment (OA) questions from top companies. Practice real interview questions with solutions to ace your coding interviews." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://oahelper.in" />
+    <meta property="og:image" content="%PUBLIC_URL%/favicon.ico" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OAHelper - Ace Your Online Assessments" />
+    <meta name="twitter:description" content="OAHelper: Your ultimate resource for Online Assessment (OA) questions from top companies. Practice real interview questions with solutions to ace your coding interviews." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/favicon.ico" />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <title>OAHelper - Ace Your Online Assessments</title>
+    
+    <style>
+      /* Initial loader styles */
+      #initial-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.3s ease-out;
+      }
+
+      #initial-loader.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .loader {
+        width: fit-content;
+        font-size: 80px;
+        line-height: 1.5;
+        font-family: system-ui, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #0000;
+        -webkit-text-stroke: 2px #fff;
+        background: 
+          radial-gradient(1.13em at 50% 1.6em, #fff 99%, #0000 101%) calc(50% - 1.6em) 0/3.2em 100% text,
+          radial-gradient(1.13em at 50% -0.8em, #0000 99%, #fff 101%) 50% 0.8em/3.2em 100% repeat-x text;
+        animation: l9 2s linear infinite;
+      }
+
+      .loader::before {
+        content: "OAHelper";
+      }
+
+      @keyframes l9 {
+        to {
+          background-position: calc(50% + 1.6em) 0, calc(50% + 3.2em) 0.8em;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .loader {
+          font-size: 48px;
+          -webkit-text-stroke: 1.5px #fff;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- Initial Loading Screen -->
+    <div id="initial-loader">
+      <div class="loader"></div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <script>
+      // Hide loader as soon as React renders
+      window.addEventListener('DOMContentLoaded', function() {
+        const loader = document.getElementById('initial-loader');
+        const root = document.getElementById('root');
+        
+        // Check if React has rendered content
+        const checkReactLoaded = setInterval(function() {
+          if (root && root.children.length > 0) {
+            loader.classList.add('hidden');
+            setTimeout(function() {
+              loader.remove();
+            }, 300);
+            clearInterval(checkReactLoaded);
+          }
+        }, 50);
+        
+        // Fallback: remove loader after 5 seconds max
+        setTimeout(function() {
+          if (loader) {
+            loader.classList.add('hidden');
+            setTimeout(function() {
+              loader.remove();
+            }, 300);
+          }
+          clearInterval(checkReactLoaded);
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>

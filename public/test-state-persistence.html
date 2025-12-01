@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test DSA Sheet State Persistence</title>
+</head>
+<body>
+    <h1>DSA Sheet State Persistence Test</h1>
+    <div id="output"></div>
+
+    <script>
+        // State persistence utilities (copied from DSASheet.js)
+        const STORAGE_KEY = 'dsa_sheet_state';
+
+        const saveStateToStorage = (state) => {
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+                return true;
+            } catch (error) {
+                console.warn('Failed to save state to localStorage:', error);
+                return false;
+            }
+        };
+
+        const loadStateFromStorage = () => {
+            try {
+                const savedState = localStorage.getItem(STORAGE_KEY);
+                return savedState ? JSON.parse(savedState) : null;
+            } catch (error) {
+                console.warn('Failed to load state from localStorage:', error);
+                return null;
+            }
+        };
+
+        const getDefaultState = () => ({
+            currentMode: 'dsa',
+            selectedDifficulty: 'All',
+            selectedTopic: 'All',
+            selectedSection: 'All',
+            searchQuery: '',
+            showFilters: false,
+            currentPage: 1,
+            hasMoreQuestions: true,
+            totalQuestions: 0,
+        });
+
+        // Test functions
+        function runTests() {
+            const output = document.getElementById('output');
+
+            // Test 1: Save and load state
+            output.innerHTML += '<h2>Test 1: Basic Save/Load</h2>';
+
+            const testState = {
+                currentMode: 'all',
+                selectedDifficulty: 'Medium',
+                selectedTopic: 'Array',
+                selectedSection: 'Arrays & Hashing',
+                searchQuery: 'test query',
+                showFilters: true,
+                currentPage: 2,
+                hasMoreQuestions: true,
+                totalQuestions: 150
+            };
+
+            output.innerHTML += `<p>Saving state: ${JSON.stringify(testState)}</p>`;
+
+            const saved = saveStateToStorage(testState);
+            output.innerHTML += `<p>Save result: ${saved ? 'SUCCESS' : 'FAILED'}</p>`;
+
+            const loaded = loadStateFromStorage();
+            output.innerHTML += `<p>Loaded state: ${JSON.stringify(loaded)}</p>`;
+
+            const test1Passed = loaded && JSON.stringify(loaded) === JSON.stringify(testState);
+            output.innerHTML += `<p>Test 1 result: ${test1Passed ? '✅ PASSED' : '❌ FAILED'}</p>`;
+
+            // Test 2: Default state when nothing is saved
+            output.innerHTML += '<h2>Test 2: Default State</h2>';
+            localStorage.removeItem(STORAGE_KEY);
+
+            const defaultLoaded = loadStateFromStorage();
+            const defaultState = getDefaultState();
+            const test2Passed = JSON.stringify(defaultLoaded) === JSON.stringify(defaultState);
+
+            output.innerHTML += `<p>Default state loaded: ${JSON.stringify(defaultLoaded)}</p>`;
+            output.innerHTML += `<p>Test 2 result: ${test2Passed ? '✅ PASSED' : '❌ FAILED'}</p>`;
+
+            // Test 3: Partial state merge
+            output.innerHTML += '<h2>Test 3: Partial State Merge</h2>';
+
+            const partialState = {
+                currentMode: 'dsa',
+                selectedDifficulty: 'Hard'
+            };
+
+            saveStateToStorage(partialState);
+            const mergedLoaded = loadStateFromStorage();
+
+            // Should have partial state merged with defaults
+            const expectedMerged = {
+                currentMode: 'dsa',
+                selectedDifficulty: 'Hard',
+                selectedTopic: 'All',
+                selectedSection: 'All',
+                searchQuery: '',
+                showFilters: false,
+                currentPage: 1,
+                hasMoreQuestions: true,
+                totalQuestions: 0,
+            };
+
+            const test3Passed = JSON.stringify(mergedLoaded) === JSON.stringify(expectedMerged);
+            output.innerHTML += `<p>Merged state: ${JSON.stringify(mergedLoaded)}</p>`;
+            output.innerHTML += `<p>Test 3 result: ${test3Passed ? '✅ PASSED' : '❌ FAILED'}</p>`;
+
+            // Summary
+            output.innerHTML += '<h2>Summary</h2>';
+            const totalTests = 3;
+            const passedTests = [test1Passed, test2Passed, test3Passed].filter(Boolean).length;
+            output.innerHTML += `<p>Total tests: ${totalTests}, Passed: ${passedTests}, Failed: ${totalTests - passedTests}</p>`;
+
+            if (passedTests === totalTests) {
+                output.innerHTML += '<p style="color: green; font-weight: bold;">🎉 All tests passed! State persistence is working correctly.</p>';
+            } else {
+                output.innerHTML += '<p style="color: red; font-weight: bold;">❌ Some tests failed. Check the implementation.</p>';
+            }
+        }
+
+        // Run tests when page loads
+        document.addEventListener('DOMContentLoaded', runTests);
+    </script>
+</body>
+</html>

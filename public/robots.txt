@@ -1,0 +1,42 @@
+# OAHelper - Online Assessment Questions Platform
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+Allow: /company-questions*
+Allow: /questions/*
+Allow: /login
+Allow: /signup
+
+# Disallow admin and sensitive areas
+Disallow: /admin*
+Disallow: /upload-question*
+Disallow: /api/
+Disallow: /*.php$
+Disallow: /user_question_images/
+Disallow: /verify-email*
+Disallow: /forgot-password*
+
+# Allow important assets
+Allow: /static/
+Allow: /logo*.png
+Allow: /favicon.ico
+Allow: /manifest.json
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://oahelper.in/sitemap.xml
+
+# Specific instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /

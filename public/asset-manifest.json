@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.91a52776.css",
+    "main.js": "/static/js/main.dbbbcc94.js",
+    "static/js/488.6b1eec5f.chunk.js": "/static/js/488.6b1eec5f.chunk.js",
+    "static/media/redpill.png": "/static/media/redpill.13ab7d2a114db2401a71.png",
+    "index.html": "/index.html",
+    "main.91a52776.css.map": "/static/css/main.91a52776.css.map",
+    "main.dbbbcc94.js.map": "/static/js/main.dbbbcc94.js.map",
+    "488.6b1eec5f.chunk.js.map": "/static/js/488.6b1eec5f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91a52776.css",
+    "static/js/main.dbbbcc94.js"
+  ]
+}
