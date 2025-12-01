@@ -62,9 +62,10 @@ export async function GET(request: NextRequest) {
         companyMap[c.id] = c.name
       })
 
-      const questionMap: Record<number, typeof questionsData[0]> = {}
+      type QuestionData = { id: number; title: string; problem_statement: string; lc_tags: unknown; company_id: number }
+      const questionMap: Record<number, QuestionData> = {}
       questionsData?.forEach((q) => {
-        questionMap[q.id] = q
+        questionMap[q.id] = q as QuestionData
       })
 
       const questions = (data || []).map((row) => {

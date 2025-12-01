@@ -1,0 +1,152 @@
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.text-gradient-animated {
+    background: linear-gradient(90deg, #6366F1, #8B5CF6, #0EA5E9);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 3s ease infinite;
+}
+
+@keyframes slideDown {
+    0% { 
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% { 
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-glow {
+    0%, 100% { 
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    }
+    50% { 
+        box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+    }
+}
+
+@keyframes bounce-subtle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.popup-slide-down {
+    animation: slideDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.popup-slide-up {
+    animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.bounce-subtle {
+    animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+/* Card style popup */
+.welcome-card {
+    width: 400px;
+    background: #fff480;
+    color: black;
+    position: relative;
+    border-radius: 2.5em;
+    padding: 2em;
+    transition: transform 0.4s ease;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3em;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.welcome-card .card-top, .welcome-card .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-card .card-top p, .welcome-card .card-top .card-title, 
+.welcome-card .card-bottom p, .welcome-card .card-bottom .card-title {
+    margin: 0;
+}
+
+.welcome-card .card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.welcome-card .card-top p, .welcome-card .card-bottom p {
+    font-weight: 600;
+}
+
+.welcome-card .card-bottom {
+    align-items: flex-end;
+}
+
+.welcome-card .card-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+}
+
+.welcome-card .card-image svg {
+    width: 4em;
+    height: 4em;
+    transition: transform 0.4s ease;
+    opacity: 0.3;
+}
+
+.welcome-card:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+.welcome-card:hover .card-content {
+    transform: scale(0.96);
+}
+
+.welcome-card:hover .card-image svg {
+    transform: scale(1.05);
+}
+
+.welcome-card:active {
+    transform: scale(0.9);
+}
+
+@media (max-width: 480px) {
+    .welcome-card {
+        width: 320px;
+        padding: 1.5em;
+    }
+}
